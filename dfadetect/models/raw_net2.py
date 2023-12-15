@@ -8,8 +8,6 @@ from collections import OrderedDict
 from torch.nn.parameter import Parameter
 
 
-___author__ = "Hemlata Tak"
-__email__ = "tak@eurecom.fr"
 
 
 class SincConv(nn.Module):
@@ -209,8 +207,8 @@ class RawNet(nn.Module):
           
        
         self.sig = nn.Sigmoid()
-        self.logsig = nn.Sigmoid()
-        self.logsoftmax = nn.LogSoftmax(dim=1)
+        # self.logsig = nn.Sigmoid()
+        # self.logsoftmax = nn.LogSoftmax(dim=1)
         self.nsig= (nn.Sigmoid())
 
         
@@ -296,9 +294,9 @@ class RawNet(nn.Module):
         x = x[:,-1,:]
         x = self.fc1_gru(x)
         x = self.fc2_gru(x)
-        output=(self.nsig(x))
-        # print(output)
-        return output
+        x=(self.nsig(x))
+        print("output : ", x)
+        return x
         
         
 

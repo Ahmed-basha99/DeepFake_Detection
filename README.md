@@ -11,7 +11,7 @@ Orignal RawNet model [here](https://github.com/asvspoof-challenge/2021/tree/main
 ## Setup
 We use Cuda so run the following after installing it
 ```
-conda create myenv python=3.8
+conda create myenv python==3.9
 
 conda activate myenv
 ```
@@ -20,6 +20,14 @@ You can install all needed dependencies by running:
 ```
 pip install -r requirements.txt
 ```
+
+## Run the Model 
+
+To run the model,  
+activate conda environment
+run : python demo.py. 
+Follow the steps by specifying the path of the audio file that need to be examined
+The output will be a probabilty that the audio clip is authentic. 
 
 ## Training models
 
@@ -97,16 +105,8 @@ optional arguments:
 Make sure to move the out-of-distribution models to a seperate directory first!
 
 
-# BibTeX
+# Special Thanks
 
-When you cite our work feel free to use the following bibtex entry:
-```
-@inproceedings{
-  frank2021wavefake,
-  title={{WaveFake: A Data Set to Facilitate Audio Deepfake Detection}},
-  author={Joel Frank and Lea Sch{\"o}nherr},
-  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-  year={2021},
-}
-```
+This project would not be finished without the great work of [Joel Frank](https://github.com/Joool). 
+
 # DeepML_FakeDetect
