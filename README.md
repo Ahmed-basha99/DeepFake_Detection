@@ -107,5 +107,5 @@ Make sure to move the out-of-distribution models to a seperate directory first!
 
 # Special Thanks
 
-This project would not be finished without the great work of [Joel Frank](https://github.com/Joool). 
+This project would not be finished without the great work of Joel Frank 
 
